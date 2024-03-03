@@ -1,0 +1,45 @@
+page {
+  background-color: #f8f8f8;
+}
+.container {
+  background-color: #fff;
+  padding: 40px 32px;
+  .enquiry-btn {
+    display: flex;
+    flex-direction: column;
+    background-color: #0081ff;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      padding-bottom: 8px;
+    }
+    .description {
+      font-size: 28px;
+    }
+  }
+}
+.at-float-layout__container {
+  min-height: 1000px;
+}
+.at-float-layout .layout-header {
+  background-color: #fff;
+}
+.at-float-layout .layout-header__title {
+  text-align: center;
+  padding-left: 80px;
+}
+.at-search-bar__action{
+  display: none;
+}
+.at-search-bar::after{
+  content: none;
+}
+.at-search-bar__placeholder-wrap {
+  justify-content: flex-start;
+}
+.brand-list {
+  margin-top: 30px;
+}

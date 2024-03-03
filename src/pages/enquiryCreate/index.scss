@@ -1,0 +1,95 @@
+.enquiry-form {
+  border-top: 2px solid #f1f1f1;
+  padding: 0 16px;
+  .form-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 2px solid #f1f1f1;
+    line-height: 108px;
+    .form-item__label {
+      width: 180px;
+      font-size: 28px;
+      color: #666;
+    }
+    .form-item__select {
+      font-size: 28px;
+      color: #333;
+      flex: 1;
+    }
+    .form-item__radio {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0 10px;
+    }
+    .radio-list__label {
+      line-height: initial;
+    }
+    .radio-list__radio {
+      padding-bottom: 20px;
+    }
+    radio .wx-radio-input.wx-radio-input-checked {
+      border-color: #0081ff !important;
+      background-color: transparent !important;
+    }
+
+    radio .wx-radio-input {
+      height: 35px;
+      width: 35px;
+      margin-top: 0;
+      border-radius: 50%;
+      border: 2px solid #0081ff;
+      background: transparent;
+      margin-right: 20px;
+    }
+    radio .wx-radio-input.wx-radio-input-checked::before {
+      border-radius: 50%; /* 圆角 */
+      width: 35px; /* 选中后对勾大小，不要超过背景的尺寸 */
+      height: 35px; /* 选中后对勾大小，不要超过背景的尺寸 */
+      line-height: 35px;
+      text-align: center;
+      font-size: 28px; /* 对勾大小 30rpx */
+      color: #0081ff; /* 对勾颜色 白色 */
+      background: transparent;
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.at-float-layout__container {
+  min-height: 240px;
+}
+.at-float-layout .layout-header {
+  display: none;
+}
+.category-list {
+  padding: 20px;
+  .category-list__btn {
+    margin: 16px 0;
+    color: #f37b1d;
+    background: transparent;
+    &::after {
+      border-color: #f37b1d;
+    }
+  }
+}
+
+.enquiry-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #f1f1f1;
+  .enquiry-footer__btn {
+    background-color: #f37b1d;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 32px;
+  }
+}
